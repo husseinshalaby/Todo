@@ -1,0 +1,111 @@
+.wrapper{
+  background-color: #FCF8E3;
+  height: 800px;
+}
+.header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  justify-content: center;
+}
+.grid {
+  background-color: #E3E9FF;
+  padding: 10px;
+}
+label {
+  padding: 20px
+}
+.add-todo-label{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: 12px 0 0 0;
+  justify-content: center;
+  font-size: 24px
+}
+.input {
+  margin: 8px 0 5px 0;
+}
+.category-select {
+  margin: 20px 0;  
+}
+ul {
+  list-style: none;
+  padding-top: 10px;
+}
+.child{
+  background: #fff;
+  padding: 10px;
+  display: grid;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  grid-template-areas: 'p p p p p p p p p p p p p p p p p p p p p p p p p p show del done'
+                       'd d d d d d d d d d d d d d d d d d d d d d d d d d d d d';
+}
+.todo-name  {
+  grid-area: p;
+}
+.todo-details { 
+  display :none;
+  grid-area: d;
+}
+.show {
+  display: grid;
+  background-color: #eee;
+  height: 100px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 20px
+}
+.hide {
+  display: none;
+}
+.deleteButton {
+  grid-area: del
+}
+.doneButton {
+  grid-area: done;
+}
+.showDetailsButton {
+  grid-area: show;
+}
+.doneTodo {
+  background: #DFF0D8;
+}
+.doneTodo p {
+  text-decoration: line-through;
+  color: steelblue;
+}
+ul li {
+  display: grid
+}
+.select{
+  display: block;
+  padding: 7px;
+}
+.filtering{
+  display: flex;
+}
+.filtering div {
+  width: 30%;
+  margin-top: 20px;
+}
+.filtering select{
+  margin: 15px 15px 15px 40px;
+}
+.sorting{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: center
+}
+.filter-button{
+  height: 40px;
+}
+#submit {
+  font-size: 20px;
+  background-color: #AF7EEB;
+}

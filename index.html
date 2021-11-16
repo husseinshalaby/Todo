@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo Application</title>
+    <script src="app.js" async></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> 
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header"> <h1 class="header-content">Todo App</h1></header>
+        <div class="grid row row-no-gutters">
+            <div class="form-group col-xs-6 form">
+              <label for="input" class ="add-todo-label">Add New Todo</label>
+              <input id="input" type="text" placeholder="What is in your mind ?" class="form-control input" />
+              <textarea class="form-control textarea" rows="3" placeholder="Todo Delatils (Optional)"></textarea>
+              <select name="categories" class="form-select form-select-lg mb-3 select category-select" aria-label=".form-select-lg example" id="category-select" >
+                  <option value="" id="default-option">Choose category</option>
+                  <option value="work">Work</option>
+                  <option value="study">Study</option>
+                  <option value="sport">Sport</option>
+                  <option value="personal">Personal</option>
+                  <option value="family">Family</option>
+                  <option value="friends">Friends</option>
+              </select>
+              <button id="submit" class="btn btn-primary btn-circle btn-lg button-submit">+ New Task</button>
+            </div>
+            <div class="col-xs-6">
+              <section class="filtering">
+                  <div class="show-category">
+                      <select name="categories" class="form-select form-select-lg mb-3 select" aria-label=".form-select-lg example" id="category-filter" >
+                          <option value="all">All</option>
+                          <option value="work">Work</option>
+                          <option value="study">Study</option>
+                          <option value="sport">Sport</option>
+                          <option value="personal">Personal</option>
+                          <option value="family">Family</option>
+                          <option value="friends">Friends</option>
+                      </select>
+                  </div>
+                  <div>
+                      <ul class="sorting">
+                          <li><button class="filter-button showAll btn btn-primary">show all </button></li>
+                          <li><button class="filter-button toBeDone btn btn-default">to be done</button></li>
+                          <li><button class="filter-button done btn btn-default">done</button></li>
+                        </ul>
+                  </div>                
+              </section>
+              <ul id="users" class ='event-bubbling'></ul>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
